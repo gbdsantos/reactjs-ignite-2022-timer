@@ -14,10 +14,16 @@ const buttonVariants = {
 }
 
 export const ButtonContainer = styled.button<ButtonContainerProps>`
-  width: 100px;
+  border: 0;
+  border-radius: 4px;
+  margin: 8px;
+
   height: 40px;
+  width: 100px;
   
-  ${props => {
+  background-color: ${props => props.theme.primary}
+  
+  /* ${props => {
     return css`background-color: ${buttonVariants[props.variant]}`
-  }}
+  }} */
 `;
